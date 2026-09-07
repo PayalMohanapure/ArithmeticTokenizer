@@ -1,0 +1,11 @@
+a               IDENTIFIER
+=               ASSIGN
+10              INTEGER
++               PLUS
+20              INTEGER
+*               MULTIPLY
+(               LPAREN
+x               IDENTIFIER
+-               MINUS
+y               IDENTIFIER
+)               RPAREN
