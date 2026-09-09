@@ -1,0 +1,33 @@
+ARITHMETIC EXPRESSION TOKENIZER
+===============================
+
+INPUT
+-----
+result = 12.5 + 3.14 * (x - 2)
+
+TOKENS
+------
+1. result       IDENTIFIER
+2. =            ASSIGN
+3. 12.5         FLOAT
+4. +            PLUS
+5. 3.14         FLOAT
+6. *            MULTIPLY
+7. (            LPAREN
+8. x            IDENTIFIER
+9. -            MINUS
+10. 2            INTEGER
+11. )            RPAREN
+
+STATISTICS
+----------
+Total Tokens: 11
+Identifiers: 2
+Numbers: 3
+Operators: 4
+Parentheses: 2
+Errors: 0
+
+ERRORS
+------
+No lexical errors detected.
