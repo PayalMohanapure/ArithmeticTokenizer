@@ -131,8 +131,10 @@ Whitespace characters (spaces and tabs `[ \t]+`) and newlines (`\n`) are ignored
 
 Install requirements:
 ```bash
-pip install PySide6-Essentials
+pip install -r requirements.txt
 ```
+*(Or `pip install PySide6-Essentials` if only running the GUI)*
+
 
 ### Launching the Application
 Launch the desktop application directly from the repository root:
