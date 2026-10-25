@@ -1,4 +1,4 @@
-"""Application Entry Point for Arithmetic Expression Tokenizer UI.
+"""Application Entry Point for C-Language Compiler Tokenizer UI.
 
 Initializes PySide6 application, configures high-DPI attributes,
 and presents the main window.
@@ -12,15 +12,14 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QApplication
 from ui.main_window import MainWindow
 
 
 def main() -> None:
-    """Launch the Arithmetic Expression Tokenizer Desktop Application."""
+    """Launch the C-Language Compiler Tokenizer Desktop Application."""
     app = QApplication(sys.argv)
-    app.setApplicationName("Arithmetic Expression Tokenizer")
+    app.setApplicationName("C-Language Compiler Tokenizer")
     app.setOrganizationName("CompilerDesignProject")
 
     window = MainWindow()

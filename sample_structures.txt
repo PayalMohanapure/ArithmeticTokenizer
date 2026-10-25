@@ -1,0 +1,31 @@
+// Sample 3: Structs, Pointers, Arrays, and sizeof()
+#include <stdio.h>
+
+struct Student {
+    int id;
+    float marks[3];
+    float gpa;
+};
+
+int main() {
+    struct Student s1;
+    s1.id = 1001;
+    s1.marks[0] = 85.5;
+    s1.marks[1] = 92.0;
+    s1.marks[2] = 78.5;
+    s1.gpa = 3.82;
+
+    // Pointer to Structure and Arrow (->) Operator
+    struct Student *ptr = &s1;
+    printf("Student ID: %d, GPA: %.2f\n", ptr->id, ptr->gpa);
+
+    // Array Size Calculation using sizeof Operator
+    int numbers[] = {10, 20, 30, 40, 50, 60};
+    int count = sizeof(numbers) / sizeof(numbers[0]);
+
+    for (int idx = 0; idx < count; idx++) {
+        numbers[idx] += 5;
+    }
+
+    return 0;
+}

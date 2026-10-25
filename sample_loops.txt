@@ -1,0 +1,33 @@
+// Sample 1: Loop Constructs & Control Flow in C
+#include <stdio.h>
+
+int main() {
+    int sum = 0;
+    int limit = 10;
+
+    // 1. Standard For Loop with Step
+    for (int i = 1; i <= limit; i++) {
+        sum += i * 2;
+    }
+
+    // 2. While Loop with Control Statements
+    int counter = 0;
+    while (counter < 20) {
+        counter++;
+        if (counter % 3 == 0) {
+            continue; // Skip multiples of 3
+        }
+        if (counter > 15) {
+            break;    // Terminate early
+        }
+    }
+
+    // 3. Do-While Loop
+    int countdown = 5;
+    do {
+        printf("Countdown: %d\n", countdown);
+        countdown--;
+    } while (countdown > 0);
+
+    return 0;
+}

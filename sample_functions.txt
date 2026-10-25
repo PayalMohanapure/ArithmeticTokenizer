@@ -1,0 +1,29 @@
+// Sample 4: Functions, Recursion, Macros, and Constants
+#include <stdio.h>
+#define PI 3.14159
+#define MAX_VALUE 100
+
+// Recursive Function: Factorial
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+// Helper Function: Circle Area
+float calculate_area(float radius) {
+    return PI * radius * radius;
+}
+
+int main() {
+    int num = 6;
+    int fact_res = factorial(num);
+    printf("Factorial of %d = %d\n", num, fact_res);
+
+    float r = 4.5;
+    float area = calculate_area(r);
+    printf("Area with radius %.2f = %.2f\n", r, area);
+
+    return 0;
+}
