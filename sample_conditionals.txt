@@ -1,0 +1,42 @@
+// Sample 2: Conditionals, Switch-Case, and Ternary Operator
+#include <stdio.h>
+
+int main() {
+    int score = 88;
+    char grade;
+
+    // 1. If - Else If - Else Ladder
+    if (score >= 90) {
+        grade = 'A';
+    } else if (score >= 80 && score < 90) {
+        grade = 'B';
+    } else if (score >= 70 && score < 80) {
+        grade = 'C';
+    } else {
+        grade = 'F';
+    }
+
+    // 2. Switch - Case Multi-way Branching
+    int day_code = 3;
+    switch (day_code) {
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        case 3:
+            printf("Wednesday\n");
+            break;
+        default:
+            printf("Weekend or Invalid\n");
+            break;
+    }
+
+    // 3. Ternary Conditional Operator (?:)
+    int a = 15, b = 25;
+    int maximum = (a > b) ? a : b;
+    int is_valid = (maximum != 0) && (a > 0 || b > 0);
+
+    return 0;
+}

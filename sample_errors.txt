@@ -1,0 +1,20 @@
+// Sample 5: Lexical Error Demonstration
+// This file deliberately includes invalid characters to verify error detection:
+// 1. '$' symbol in variable identifiers (Line 8)
+// 2. '@' symbol used as an invalid operator (Line 11)
+// 3. '`' backtick symbols around identifiers (Line 14)
+
+#include <stdio.h>
+
+int main() {
+    int valid_var = 100;
+    float invalid$salary = 45000.50; // Error 1: '$' is illegal in C
+
+    int multiplier = 5;
+    int computed = valid_var @ multiplier; // Error 2: '@' is not an operator
+
+    int `bad_identifier` = 42; // Error 3: '`' is illegal
+
+    printf("Valid value: %d\n", valid_var);
+    return 0;
+}

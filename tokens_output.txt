@@ -1,11 +1,61 @@
-a               IDENTIFIER
-=               ASSIGN
-10              INTEGER
-+               PLUS
-20              INTEGER
-*               MULTIPLY
-(               LPAREN
-x               IDENTIFIER
--               MINUS
-y               IDENTIFIER
-)               RPAREN
+﻿1    	COMMENT             	// Sample C Program for Lexical Analysis
+2    	PREPROCESSOR        	#include
+2    	HEADER_FILE         	<stdio.h>
+4    	KEYWORD             	int
+4    	IDENTIFIER          	add
+4    	LPAREN              	(
+4    	KEYWORD             	int
+4    	IDENTIFIER          	a
+4    	COMMA               	,
+4    	KEYWORD             	int
+4    	IDENTIFIER          	b
+4    	RPAREN              	)
+4    	LBRACE              	{
+5    	KEYWORD             	return
+5    	IDENTIFIER          	a
+5    	PLUS                	+
+5    	IDENTIFIER          	b
+5    	SEMICOLON           	;
+6    	RBRACE              	}
+8    	KEYWORD             	int
+8    	IDENTIFIER          	main
+8    	LPAREN              	(
+8    	RPAREN              	)
+8    	LBRACE              	{
+9    	KEYWORD             	int
+9    	IDENTIFIER          	x
+9    	ASSIGN              	=
+9    	INTEGER             	10
+9    	SEMICOLON           	;
+10   	KEYWORD             	float
+10   	IDENTIFIER          	y
+10   	ASSIGN              	=
+10   	FLOAT               	20.5
+10   	SEMICOLON           	;
+11   	KEYWORD             	if
+11   	LPAREN              	(
+11   	IDENTIFIER          	x
+11   	LT_OP               	<
+11   	IDENTIFIER          	y
+11   	RPAREN              	)
+11   	LBRACE              	{
+12   	IDENTIFIER          	printf
+12   	LPAREN              	(
+12   	STRING_LITERAL      	"Sum = %d\n"
+12   	COMMA               	,
+12   	IDENTIFIER          	add
+12   	LPAREN              	(
+12   	IDENTIFIER          	x
+12   	COMMA               	,
+12   	LPAREN              	(
+12   	KEYWORD             	int
+12   	RPAREN              	)
+12   	IDENTIFIER          	y
+12   	RPAREN              	)
+12   	RPAREN              	)
+12   	SEMICOLON           	;
+13   	RBRACE              	}
+14   	KEYWORD             	return
+14   	INTEGER             	0
+14   	SEMICOLON           	;
+15   	RBRACE              	}
